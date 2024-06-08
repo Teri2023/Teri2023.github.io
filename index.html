@@ -3,17 +3,78 @@
 <head>
 <meta charset="utf-8">
 <title>Thu Tran - Porfolio </title>
+<style>
+.dropbtn {
+	background-color: #fff;
+  	color: #000;
+  	padding: 0px 25px;
+  	border: none;
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	text-decoration: none;
+	font-size: 12px
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px ;
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #D9D9D9;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #000;}
+</style>
 
 </head>
 
 <body style="width: 100%; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';">
 	<div style="width: 50%; min-height:860px; margin: auto; min-width: 700px">
-		<div style = "padding-bottom: 5px;">
-		<a style= "color:black; text-decoration: none;padding-right: 25px;" href="https://teri2023.github.io/index.html">Home</a>|<a style= "color:black; text-decoration: none;padding-right: 25px; padding-left: 25px"  href="project1.html">Restauren's Project</a>|<a style= "color:black; text-decoration: none;padding-right: 25px; padding-left: 25px"  href="project2.html">FreshFits</a>|<a style= "color:black; text-decoration: none;padding-right: 25px; padding-left: 25px"  href="project3.html">Drexel Zoo</a>|<a style= "color:black; text-decoration: none;padding-right: 25px; padding-left: 25px"  href="essay.html">Smart Rice</a>  
+		<div style = "padding-bottom: 5px;font-size: 12px">
+			<a style= "color:black; text-decoration: none;padding-right: 25px; " href="https://teri2023.github.io/index.html">Home</a>|
+			<div class="dropdown">
+				<button class="dropbtn">DS Projects</button>
+				<div class="dropdown-content">
+					<a href="project4.html">E-Z Car Rental Database</a>
+					<a href="PCA.html">PCA</a>
+				</div>
+			</div>|
+			<div class="dropdown">
+				<button class="dropbtn">UX Projects</button>
+				<div class="dropdown-content">
+					<a href="project1.html">EasyEats</a>
+					<a href="project2.html">FreshFits</a>
+					<a href="project3.html">Drexel Zoo</a>
+					<a href="essay.html">Smart Rice</a>
+				</div>
+			</div> 
 		</div>
 		<div style ="width: 86%; float: left;">
-			<div style="height: 105px;  background-image:url('img/bg.jpg');  border-radius: 15px; background-repeat: no-repeat;padding-top: 135px;">
-				<div style="width: 121px; float:left; padding-left: 10px"><img src="img/avatar.jpeg" width="121px" alt="" style="border-radius: 50%; border: 5px solid rgba(0, 0, 0, 0.05);"/></div>
+			<div style="height: 105px;  background-image:url('img/bg.png');  border-radius: 15px; background-repeat: no-repeat;padding-top: 135px;">
+				<div style="width: 121px; float:left; padding-left: 10px"><img src="img/avatar.jpeg" width="121px" alt="" style="border-radius: 50%; border: 5px solid rgba(255, 255, 0, 0.08);"/></div>
 			  	<div style = "padding-left: 11px; width: 75%; float:left; padding-top: 21px ">
 					<p style=" font-size: 2.1em; margin: 0px;padding: 0px; color: white; text-shadow: 2px 2px 4px #000000;">Thu Tran</p> 
 					<p style=" font-size: 1.5em; margin: 0px;padding: 0px ;color: white; text-shadow: 2px 2px 4px #000000; ">MT Engineer II – Dupont Vespel® Pencader</p>
@@ -26,7 +87,7 @@
   					<li style="font-size: 1em">AS in Computer Programming, NCC Education</li>
 					<li style="font-size: 1em">AS in Science, Community College of Philadelphia</li>
 					<li style="font-size: 1em">BS in Chemical Engineering, Drexel University</li>
-				    <li style="font-size: 1em">MS in Data Science*, Drexel University</li>
+				    <li style="font-size: 1em">MS in Data Science, Drexel University</li>
 				</ul>
 				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">Experience</p>
 				<ul>
@@ -51,11 +112,11 @@
 				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">Data Science Knowledge</p>
 				<ul>
   					<li style="font-size: 1em">Proficiency in development languages: MATLAB, VBA, Python </li>
-					<li style="font-size: 1em">Proficiency in Database : Microsoft SQL, MySQL, Power Query </li>
-					<li style="font-size: 1em">Tracked data accuracy in MES, Oracle, and Power BI report</li>
-				    <li style="font-size: 1em">Developed data visualization power BI report for manufacture management</li>
-					<li style="font-size: 1em">Applied Machine Learning to predict process outcome </li>
-					
+					<li style="font-size: 1em">Proficiency in Database : Power Query, SQL, ETL </li>
+					<li style="font-size: 1em">Proficiency in data preporcesssing : ETL, Data Cleaning, Data transfromation ... </li>
+					<li style="font-size: 1em">Proficiency in Data Visualization: Power BI, Minitab, Tableau</li>
+					<li style="font-size: 1em">Knowledege in Deep Learning frameworks: PyTorch, TensorFlow or scikit-learn </li>
+					<li style="font-size: 1em">Knowledege in AI Model: linear regression, decision tree regression... </li>
 				</ul>
 			</div>
 	  	</div>

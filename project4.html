@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thu Tran - Porfolio </title>
+<style>
+.dropbtn {
+	background-color: #fff;
+  	color: #000;
+  	padding: 0px 25px;
+  	border: none;
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	text-decoration: none;
+	font-size: 12px
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px ;
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #D9D9D9;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #000;}
+</style>
+
+</head>
+
+<body style="width: 100%; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';">
+	<div style="width: 50%; min-height:860px; margin: auto; min-width: 700px">
+		<div style = "padding-bottom: 5px;font-size: 12px">
+			<a style= "color:black; text-decoration: none;padding-right: 25px; " href="https://teri2023.github.io/index.html">Home</a>|
+			<div class="dropdown">
+				<button class="dropbtn">DS Projects</button>
+				<div class="dropdown-content">
+					<a href="project4.html">E-Z Car Rental Database</a>
+					<a href="PCA.html">PCA</a>
+				</div>
+			</div>|
+			<div class="dropdown">
+				<button class="dropbtn">UX Projects</button>
+				<div class="dropdown-content">
+					<a href="project1.html">EasyEats</a>
+					<a href="project2.html">FreshFits</a>
+					<a href="project3.html">Drexel Zoo</a>
+					<a href="essay.html">Smart Rice</a>
+				</div>
+			</div> 
+		</div>
+		<div style ="width: 86%; float: left;">
+			<div style="height: 105px;  background-image:url('img/bg.png');  border-radius: 15px; background-repeat: no-repeat;padding-top: 135px;">
+				<div style="width: 121px; float:left; padding-left: 10px"><img src="img/avatar.jpeg" width="121px" alt="" style="border-radius: 50%; border: 5px solid rgba(255, 255, 0, 0.08);"/></div>
+			  	<div style = "padding-left: 11px; width: 75%; float:left; padding-top: 21px ">
+					<p style=" font-size: 2.1em; margin: 0px;padding: 0px; color: white; text-shadow: 2px 2px 4px #000000;">Thu Tran</p> 
+					<p style=" font-size: 1.5em; margin: 0px;padding: 0px ;color: white; text-shadow: 2px 2px 4px #000000; ">MT Engineer II – Dupont Vespel® Pencader</p>
+					<p style=" font-style: italic;  font-size: 1.1em; margin: 0px;padding: 21px 0px 0px 0px ;color: black; text-shadow: 1px 1px 1px #D3D3D3;  ">Hobbies: Family, Travel, Photography, Reading, Swimming </p>
+				</div>
+		  	</div>
+			<div style="margin-top: 35px;  color: black; text-align: justify;">
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">Project Statement</p>
+				<p>The project aims to develop a comprehensive Car Rental Service application that provides a user-friendly platform for seamless car rentals from multiple locations, automating the rental process and ensuring efficient management by employees for enhanced customer satisfaction.</p>
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">Team</p>
+				<ul>
+					<li>Ramar Huntley</li>
+					<li>Thu Tran</li>
+					<li>Yash Chaudhary</li>
+					<li>Moesha Noah</li>
+				</ul>
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">Requirements Specification</p>
+				<p>The database for E-Z Car Rental will store comprehensive information about rental cars, locations, customers, and transactions, facilitating seamless car rental services. Users can search for cars by zip code, city, or address and filter by features such as make, model, color, and transmission. Each user and car will have unique IDs to track reservations, conditions, and transaction histories. The system will ensure unique user credentials, verify legal rental requirements, and update car statuses from "available" to "rented" and back. Maintenance records, including service and repair histories, will be meticulously tracked. The transaction table will manage rental periods, payments, and any additional charges or refunds due to damages or cancellations. This database will also support business analysis to identify popular car types, profitable dates, and locations for targeted marketing efforts.
+				</p>
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">ER Model</p>
+				<img src="img/project4_1.png" width="100%"  alt=""/>
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">RELATIONAL SCHEMA Example</p>
+				<p>
+					<ul>
+					<li>Users (userID, firstName, lastName, email, dob, phoneNO, driverLicenseID, dlAddress, password)</li>
+					<li>DriverReport (driverLicenseID, userID, image, exp, class)The "DriverReport" table references the " Users" table using the "userID" foreign key.</li>
+					<li>Car (carID, carBrand, carModel, carYear, carMilage, carBodystyle, carFunction, carCondition, availableStatus, priceperday)</li>
+			
+				</ul>
+				</p>
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">DDL Statements Example</p>
+				<pre>
+  					<code>
+CREATE TABLE car
+( 
+carID number(5) NOT NULL,
+carBrand varchar2(20) NOT NULL,
+carModel varchar2(20) NOT NULL,
+carYear varchar2(4) NOT NULL,
+carMileage number(9) NOT NULL,
+carBodyStyle varchar2(20) NOT NULL,
+carFunction varchar2(50) NOT NULL,
+carCondition varchar2(20) NOT NULL,
+availableStatus varchar2(20) NOT NULL,
+priceperday number(9) not null,
+CONSTRAINT car_pk PRIMARY KEY (carID)
+);
+					</code>
+				</pre>
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">DML Statements Example</p>
+				<pre>
+  					<code>
+INSERT INTO car VALUES  (1,'Toyota','A1','2022','2368.38495220005','SEDAN','automtic','NEW','TRUE',80);
+INSERT INTO car VALUES  (1,'Toyota','A1','2022','2368.38495220005','SEDAN','automtic','NEW','TRUE',80);
+INSERT INTO car VALUES  (2,'Honda','A2','2000','78786.2598690467','SUV','automtic','OLD','TRUE',30);
+INSERT INTO car VALUES  (3,'Kia','A3','2023','4367.90960793772','ELECTRIC','automtic','NEW','TRUE',100);
+INSERT INTO car VALUES  (4,'Volkswagan','A4','2019','21979.2660105048','SEDAN','automtic','NEW','TRUE',60);
+
+  					</code>
+				</pre>
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">Queries Example</p>
+				<p>Finding incomplete transaction details with user information for a specific transaction ID for employee management</p>
+				<pre>
+				<code>
+SELECT T.transactionID, U.firstName, U.lastName, U.phoneNo 
+FROM Transaction T JOIN Users U on T.userID = U.userID 
+WHERE T.status = 'INCOMPLETE' 
+ORDER BY T.transactionID;</code>
+				</pre>
+				<img src="img/project4_2.png" width="50%"  alt="Thu_tran" />
+				<p style="text-shadow: 1px 1px 1px #D3D3D3; font-size: 1.5em; margin: 0px">Summary</p>
+				<p>The project developed a comprehensive database for a Car Rental Service application, managing car information, user information, transactions, purchases, and employment data, with the ability to manipulate and control data using SQL queries. I have learned how to create the ER model, review and update the relational schema, data dictionary, DDL, DML, and data manipulation, manipulate queries and Oracle databases.</p>
+				
+			</div>
+	  	</div>
+		<div style ="width: 12%; height: 100%;  float: right;">
+	    	<img src="img/ncc.png" width="100%" style=" margin-bottom: 10px"  alt=""/> 
+	    	<img src="img/vinasource.jpeg" width="100%" height="" alt="" style=" margins-bottom: 10px"/>
+	    	<img src="img/gnt.jpeg" width="100%" height="" alt="" style=" margin-bottom: 10px"/>
+			<img src="img/CCP.jpeg" width="100%" height="" alt="" style=" margin-bottom: 10px"/>
+	    	<img src="img/drexel.jpeg" width="100%" height="" alt="" style=" margin-bottom: 10px"/>
+	    	<img src="img/chemour.jpeg" width="100%" height="" alt="" style=" margin-bottom: 10px"/>
+	    	<img src="img/IIVI.png" width="100%" height="" alt="" style=" margin-bottom: 10px"/>
+	    	<img src="img/IVC.jpeg"width="100%" height="" alt="" style=" margin-bottom: 10px"/>
+	    	<img src="img/DUPONT.jpeg" width="100%" height="" alt="" style=" margin-bottom: 10px"/> </div>
+			
+	</div>
+</body>
+</html>
